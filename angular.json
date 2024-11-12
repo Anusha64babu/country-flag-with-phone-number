@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "intl-tel-input"
+            ],
             "outputPath": "dist/flag",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -25,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/intl-tel-input/build/css/intlTelInput.css"
             ],
             "scripts": []
           },
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c32400ac-d295-40e4-a428-81d897aaa5cc"
   }
 }
